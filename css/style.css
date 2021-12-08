@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    width: 100vw;
+    height: 200vh;
+}
+
+header {
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+#frontpage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header_bookings {
+    margin-left: 30px;
+}
+
+#logo1 {
+    height: 190px;
+    width: auto;
+}
+
+#hamburger {
+    margin-right: 30px;
+}
+
+#fp_picture {
+    width: 50vw;
+}
+
+.hamburger_line {
+    background: whitesmoke;
+    height: 10px;
+    width: 80px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.links {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.125rem;
+    font-weight: bold;
+}
+
+.headers:hover {
+    color: whitesmoke
+}
+
+#hamburger:hover {
+    cursor: pointer;
+    color: whitesmoke;
+}
