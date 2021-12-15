@@ -8,14 +8,14 @@ body {
     background: black;
     width: 100vw;
     height: 200vh;
+    overflow-x: hidden;
 }
 
 header {
     height: 210px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100vw;
+    justify-content: space-evenly;
 }
 
 #frontpage {
@@ -25,7 +25,7 @@ header {
 }
 
 #header_bookings {
-    margin-left: 30px;
+    margin-right: 250px;
 }
 
 #logo1 {
@@ -34,11 +34,57 @@ header {
 }
 
 #hamburger {
-    margin-right: 30px;
+    margin-left: 250px;
 }
 
-#fp_picture {
+#frontpage_picture {
     width: 50vw;
+}
+
+#menus {
+    width: 100vw;
+    margin-top: 25vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "m1 p1" "p2 m2" "m3 p3" "p4 m4";
+}
+
+#menu1 {
+    grid-area: m1;
+}
+
+#menupicture1 {
+    grid-area: p1;
+}
+
+#menu2 {
+    grid-area: m2;
+}
+
+#menupicture2 {
+    grid-area: p2;
+}
+
+#menu3 {
+    grid-area: m3;
+}
+
+#menupicture3 {
+    grid-area: p3;
+}
+
+#menu4 {
+    grid-area: m4;
+}
+
+#menupicture4 {
+    grid-area: p4;
+}
+
+.coordinatepictures {
+    width: 100%;
+    height: auto;
 }
 
 .hamburger_line {
@@ -57,11 +103,15 @@ header {
     font-weight: bold;
 }
 
-.headers:hover {
-    color: whitesmoke
+.menu {
+    background-color: black;
 }
 
 #hamburger:hover {
     cursor: pointer;
-    color: whitesmoke;
+    color: dimgrey;
+}
+
+.links:hover {
+    color: dimgrey;
 }
