@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}
+
 body {
     background: black;
     width: 100vw;
@@ -25,7 +30,7 @@ header {
 }
 
 #header_bookings {
-    margin-right: 250px;
+    margin-right: px;
 }
 
 #logo1 {
@@ -34,7 +39,7 @@ header {
 }
 
 #hamburger {
-    margin-left: 250px;
+    margin-left: px;
 }
 
 #frontpage_picture {
@@ -52,6 +57,9 @@ header {
 
 #menu1 {
     grid-area: m1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #menupicture1 {
@@ -60,6 +68,9 @@ header {
 
 #menu2 {
     grid-area: m2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #menupicture2 {
@@ -68,6 +79,9 @@ header {
 
 #menu3 {
     grid-area: m3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #menupicture3 {
@@ -76,6 +90,9 @@ header {
 
 #menu4 {
     grid-area: m4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #menupicture4 {
@@ -85,6 +102,18 @@ header {
 .coordinatepictures {
     width: 100%;
     height: auto;
+}
+
+.menutxt {
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 2.7rem;
+    text-align: justify;
+    text-align-last: justify;
+    position: absolute;
+    text-transform: inherit;
+    margin: 100px;
+    color: whitesmoke;
 }
 
 .hamburger_line {
@@ -107,9 +136,8 @@ header {
     background-color: black;
 }
 
-#hamburger:hover {
-    cursor: pointer;
-    color: dimgrey;
+#hamburger:hover .hamburger_line {
+    background-color: dimgrey;
 }
 
 .links:hover {
