@@ -4,20 +4,23 @@
     box-sizing: border-box;
 }
 
-p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
-}
-
 body {
     background: black;
     width: 100vw;
-    height: 200vh;
+    height: auto;
     overflow-x: hidden;
 }
 
 header {
-    height: 210px;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#indexheader {
+    height: 250px;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -30,20 +33,23 @@ header {
 }
 
 #header_bookings {
-    margin-right: px;
+    margin-right: 0px;
 }
 
 #logo1 {
-    height: 190px;
+    height: 160px;
     width: auto;
+    align-self: center;
+    margin-right: 30px;
+    margin-left: 10;
 }
 
 #hamburger {
-    margin-left: px;
+    margin-left: 0px;
 }
 
 #frontpage_picture {
-    width: 50vw;
+    width: 40vw;
 }
 
 #menus {
@@ -58,7 +64,8 @@ header {
 #menu1 {
     grid-area: m1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -99,9 +106,37 @@ header {
     grid-area: p4;
 }
 
+#fot1 {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#fot2 {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 20px;
+    outline: whitesmoke;
+}
+
 .coordinatepictures {
     width: 100%;
     height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menuheader {
+    font-weight: bold;
+    color: whitesmoke;
+    text-transform: uppercase;
 }
 
 .menutxt {
@@ -109,7 +144,6 @@ header {
     font-family: 'Courier New', Courier, monospace;
     line-height: 2.7rem;
     text-align: justify;
-    text-align-last: justify;
     position: absolute;
     text-transform: inherit;
     margin: 100px;
@@ -118,10 +152,10 @@ header {
 
 .hamburger_line {
     background: whitesmoke;
-    height: 10px;
-    width: 80px;
-    margin: 30px;
-    border-radius: 5px;
+    height: 5px;
+    width: 120px;
+    margin: 25px;
+    border-radius: 2px;
 }
 
 .links {
@@ -130,6 +164,8 @@ header {
     font-family: 'Courier New', Courier, monospace;
     font-size: 2.125rem;
     font-weight: bold;
+    text-transform: uppercase;
+    transition: ease 0.5s;
 }
 
 .menu {
@@ -142,4 +178,24 @@ header {
 
 .links:hover {
     color: dimgrey;
+}
+
+#hl1 {
+    transition: ease 0.5s
+}
+
+#hl2 {
+    transition: ease 0.5s
+}
+
+#hl3 {
+    transition: ease 0.5s
+}
+
+#hamburger:hover #hl1 {
+    transform: translate(0, 15px);
+}
+
+#hamburger:hover #hl3 {
+    transform: translate(0, -15px)
 }
