@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    height: 30vh;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -26,18 +26,17 @@ nav {
 }
 
 footer {
-    height: 200px;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#signature {
-    font-family: 'Courier New', Courier, monospace;
-    color: whitesmoke;
-    font-size: 3rem;
-    text-transform: uppercase;
-    margin: 20px;
+#logo {
+    height: 160px;
+    width: auto;
+    margin: 50px;
+    justify-self: center;
 }
 
 #frontpage {
@@ -50,12 +49,35 @@ footer {
     width: 70vw;
 }
 
-#logo {
-    height: 160px;
-    width: auto;
-    margin: 50px;
-    margin-right: 300px;
-    margin-left: 250px;
+#infobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#infotext {
+    margin: 250px;
+}
+
+#contact {
+    margin: 250px;
+    margin-top: 500px;
+    display: grid;
+    grid-template-columns: 300px 350px;
+    grid-template-rows: 100px 100px;
+    grid-template-areas: "ad1 ad2";
+}
+
+#adress {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#textbackground {
+    width: 100vw;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
 }
 
 #menu {
@@ -135,14 +157,6 @@ footer {
     color: whitesmoke;
 }
 
-.hamburger_line {
-    background: whitesmoke;
-    height: 5px;
-    width: 120px;
-    margin: 25px;
-    border-radius: 2px;
-}
-
 .links {
     color: whitesmoke;
     text-decoration: none;
@@ -151,32 +165,18 @@ footer {
     font-weight: bold;
     text-transform: uppercase;
     transition: ease 0.5s;
-}
-
-#hamburger:hover .hamburger_line {
-    background-color: dimgrey;
+    width: 200px;
 }
 
 .links:hover {
     color: dimgrey;
 }
 
-#hl1 {
-    transition: ease 0.5s
-}
-
-#hl2 {
-    transition: ease 0.5s
-}
-
-#hl3 {
-    transition: ease 0.5s
-}
-
-#hamburger:hover #hl1 {
-    transform: translate(0, 10px);
-}
-
-#hamburger:hover #hl3 {
-    transform: translate(0, -10px)
+.signature {
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-decoration: none;
 }
